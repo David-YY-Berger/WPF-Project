@@ -34,6 +34,7 @@ _Red boxes_ are drones - a 1 if they're carrying a parcel, and 0 if they're not 
 
 
 
+
 - [ ]  To **manually deliver parcels** (instead of the Simulator), open an individual drone window. 
 ![image](https://user-images.githubusercontent.com/91850832/151115429-3ec90b42-6c59-4bdf-ba48-750a9b34c5db.png)
 
