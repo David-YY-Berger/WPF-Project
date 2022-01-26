@@ -19,9 +19,9 @@ There are four main objects held in The Data Library:
 ![image](https://user-images.githubusercontent.com/91850832/151113568-cfdd7a80-e7e7-478e-9602-8b1a66fa6a8d.png)
 
 
-- [ ] Click "**Show TextBlock View**" -> 
-_Blue boxes_ are customers - with the number of parcels waiting to be delivered 
-_Green boxes_ are stations - with the number of drones charging there
+- [ ] Click "**Show TextBlock View**" \
+_Blue boxes_ are customers - with the number of parcels waiting to be delivered \
+_Green boxes_ are stations - with the number of drones charging there \
 _Red boxes_ are drones - a 1 if they're carrying a parcel, and 0 if they're not carrying a parcel
 
 ![image](https://user-images.githubusercontent.com/91850832/151113656-d721aa1e-05b6-4902-bcab-2da433aca861.png)
