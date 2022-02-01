@@ -1,0 +1,40 @@
+﻿<Window x:Class="Presentation_Layer.AddUserWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Presentation_Layer"
+        mc:Ignorable="d"
+        Title="AddUserWindow" Height="450" Width="800">
+    <Grid>
+        <Grid HorizontalAlignment="Center" Height="256" Margin="0,74,0,0" VerticalAlignment="Top" Width="480">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition/>
+                <RowDefinition Height ="*"/>
+                <RowDefinition Height ="*"/>
+                <RowDefinition Height ="*"/>
+                <RowDefinition Height ="*"/>
+            </Grid.RowDefinitions>
+            <TextBlock x:Name="tBlockUserId" Text="User Id:" TextWrapping="Wrap" Margin="5, 5, 5, 5"/>
+            <TextBlock x:Name="tBlockName" Grid.Row="1" Text="Name:" TextWrapping="Wrap" Margin="5, 5, 5, 5"/>
+            <TextBlock x:Name="tBlockUserName" Grid.Row="2" Text="Enter New Username:" TextWrapping="Wrap" Margin="5, 5, 5, 5"/>
+            <TextBlock x:Name="tBlockPassword" Grid.Row="3" Text="Enter New Password:" TextWrapping="Wrap" Margin="5, 5, 5, 5"/>
+            <Button x:Name="btnCreateNewUser" Content="Create Online Account" Grid.Column="1" Grid.Row="4" Margin="5, 5, 5, 5" Click="btnCreateNewUser_Click"/>
+
+            <TextBox x:Name="tBoxIdInput" Grid.Column="1" TextWrapping="Wrap" Margin="5, 5, 5, 5"/>
+            <TextBlock x:Name="tBlockNameInput" Grid.Column="1" Grid.Row="1" TextWrapping="Wrap" Margin="5, 5, 5, 5"/>
+            <TextBox x:Name="tBoxUsernameInput" Grid.Column="1" Grid.Row="2" TextWrapping="Wrap" Margin="5, 5, 5, 5"/>
+            <TextBox  x:Name="tBoxPasswordInput" Grid.Column="1" Grid.Row="3" TextWrapping="Wrap" Margin="5, 5, 5, 5"/>
+            <Button x:Name="btnGetMyInfo" Content="Get My Information" Grid.Column="2" Margin="5,5,5,5" Click="btnGetMyInfo_Click" Height="41" VerticalAlignment="Top"/>
+            <Button x:Name="btnCancel" Content="Cancel" HorizontalAlignment="Left" Height="31" Margin="28,0,0,0" Grid.Row="4" VerticalAlignment="Center" Width="122" Click="btnCancel_Click"/>
+
+        </Grid>
+
+
+    </Grid>
+</Window>

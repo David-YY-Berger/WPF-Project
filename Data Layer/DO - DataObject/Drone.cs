@@ -10,12 +10,12 @@ using System.Threading.Tasks;
 
 namespace DalXml
 {
-    namespace DO
+    namespace DataObject
     {
         public struct Drone : INotifyPropertyChanged
         {
             
-            public Drone(int _id, string model, DalXml.DO.WeightCategories _maxWeight)
+            public Drone(int _id, string model, DalXml.DataObject.WeightCategories _maxWeight)
                 : this()
             {
                 Id = _id;
@@ -27,7 +27,7 @@ namespace DalXml
             public int Id { get; set; }
 
             private string _model; 
-            public DalXml.DO.WeightCategories MaxWeight { get; set; }
+            public DalXml.DataObject.WeightCategories MaxWeight { get; set; }
             private bool _exists { get; set; }
 
            

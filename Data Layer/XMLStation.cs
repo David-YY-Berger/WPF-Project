@@ -41,7 +41,7 @@ namespace DALTools
         }
 
         [MethodImpl(MethodImplOptions.Synchronized)]
-        public void SaveStationListLinq(List<DalXml.DO.Station> stationList)
+        public void SaveStationListLinq(List<DalXml.DataObject.Station> stationList)
         {
             stationRoot = new XElement("stations",
                             from p in stationList
@@ -56,14 +56,14 @@ namespace DALTools
         }
 
         [MethodImpl(MethodImplOptions.Synchronized)]
-        public IEnumerable<DalXml.DO.Station> GetStationList()
+        public IEnumerable<DalXml.DataObject.Station> GetStationList()
         {
             LoadData();
-            IEnumerable<DalXml.DO.Station> listStations;
+            IEnumerable<DalXml.DataObject.Station> listStations;
             try
             {
                 listStations = (from s in stationRoot.Elements()
-                                select new DalXml.DO.Station()
+                                select new DalXml.DataObject.Station()
                                 {
                                     Id = Convert.ToInt32(s.Element("id").Value),
                                     Name = Convert.ToInt32(s.Element("name").Value),
@@ -81,15 +81,15 @@ namespace DALTools
         }
 
         [MethodImpl(MethodImplOptions.Synchronized)]
-        public DalXml.DO.Station GetStation(int _id)
+        public DalXml.DataObject.Station GetStation(int _id)
         {
             LoadData();
-            DalXml.DO.Station station;
+            DalXml.DataObject.Station station;
             try
             {
                 station = (from s in stationRoot.Elements()
                            where Convert.ToInt32(s.Element("id").Value) == _id
-                           select new DalXml.DO.Station()
+                           select new DalXml.DataObject.Station()
                            {
                                Id = Convert.ToInt32(s.Element("id").Value),
                                Name = Convert.ToInt32(s.Element("name").Value),
@@ -101,13 +101,13 @@ namespace DALTools
             }
             catch
             {
-                station = new DalXml.DO.Station();
+                station = new DalXml.DataObject.Station();
             }
             return station;
         }
 
         [MethodImpl(MethodImplOptions.Synchronized)]
-        public void AddStation(DalXml.DO.Station _station)
+        public void AddStation(DalXml.DataObject.Station _station)
         {
             XElement id = new XElement("id", _station.Id);
             XElement name = new XElement("name", _station.Name);

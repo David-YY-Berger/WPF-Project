@@ -7,7 +7,7 @@
         //else if (libraryType == "b")
         //    return DalObject.DalApi.DataSource.Instance;
         //else
-            throw new DalXml.DO.EXItemNotFoundException();
+            throw new DalXml.DataObject.EXItemNotFoundException();
     }
 }
 

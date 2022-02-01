@@ -1,0 +1,69 @@
+﻿<Window x:Class="Presentation_Layer.CustomerWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Presentation_Layer"
+        mc:Ignorable="d"
+        Title="CustomerWindow" Height="450" Width="800">
+    <Grid x:Name="OutputAndInputGrid" RenderTransformOrigin="0.46,0.503">
+        <TextBlock x:Name="tBlock_chooseCustomerId" Text=" ID:" Margin="5,5,5,5" FontSize="25"/>
+        <TextBlock x:Name="tBlock_chooseName" Grid.Row="1" Text="Name:" Margin="5,5,5,5" FontSize="25"/>
+        <TextBlock x:Name="tBlock_choosePhone" Grid.Row="2" Text="Phone:" Margin="5,5,5,5" FontSize="25"/>
+        <TextBlock x:Name="tBlockLongitude" Grid.Row="3" Text="Longitude: " TextWrapping="Wrap" Margin="5,5,5,5" FontSize="20"/>
+        <TextBlock x:Name="tBlockLatitude" Grid.Row="4" Text="Latitude: " TextWrapping="Wrap" Margin="5,5,5,5" FontSize="20"/>
+
+
+        <TextBox x:Name ="tBoxCusIdInput" Grid.Column="1" Text="" TextWrapping="Wrap" Margin="5,5,5,5" Height="Auto" VerticalAlignment="Stretch" FontSize="18" />
+        <TextBox x:Name ="tBoxNameInput" Grid.Column="1" Grid.Row="1" Text="" TextWrapping="Wrap" Margin="5,5,5,5" FontSize="18" />
+        <TextBox x:Name ="tBoxPhoneInput" Grid.Column="1" Grid.Row="2" TextWrapping="Wrap" Margin="5,5,5,5" FontSize="18" />
+        <TextBox x:Name="tBoxLongiInfo" Grid.Column="1" Grid.Row="3" Text="" TextWrapping="Wrap" Margin="5,5,5,5" FontSize="18"/>
+        <TextBox x:Name="tBoxLatitInfo" Grid.Column="1" Grid.Row="4" Text="" TextWrapping="Wrap" Margin="5,5,5,5" FontSize="18"/>
+
+        <Button x:Name ="btnAddCustomer" Content="Add Customer" Grid.Row="5" Click = "btnAddCustomer_Click" Grid.Column="1" HorizontalAlignment="Stretch" Height="Auto" VerticalAlignment="Stretch" Margin="5,5,5,5" Width="Auto" FontSize="15"/>
+        <Button x:Name="btnCancel1" Content="Cancel" Grid.Row="5" RenderTransformOrigin="0.5,0.5" Click="btnCancel1_Click" HorizontalAlignment="Stretch" Margin="5,5,5,5" VerticalAlignment="Stretch" Width="Auto" FontSize="15"/>
+        <Button x:Name ="btnEraseCust" Grid.Column="2" Content="Erase This Customer" Grid.Row="5" Margin="5,5,5,5" Click="btnEraseCust_Click"/>
+        <Button x:Name ="btnModifyCustomer" Content="Modify" Grid.Column="2" Grid.Row="1" Click="btnModifyCustomer_Click" HorizontalAlignment="Stretch" Margin="5,5,5,5"  Width="Auto" FontSize="15"/>
+        <ListBox x:Name="lstParcelListSent" Grid.Column="3" Grid.RowSpan="2" Grid.Row="1" Margin="5,0,5,0" RenderTransformOrigin="0.5,0.5" MouseDoubleClick="lstParcelListSending_MouseDoubleClick">
+            <ListBox.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform AngleX="0"/>
+                    <RotateTransform Angle="0"/>
+                    <TranslateTransform X="0"/>
+                </TransformGroup>
+            </ListBox.RenderTransform>
+        </ListBox>
+
+        <Button x:Name="btnSendParcel"  Grid.Column="2" Margin="5, 5, 5, 5" Content ="Send a Parcel" Grid.Row="4" Click="btnSendParcel_Click"/>
+        <Button x:Name="btnLogOut" Content="Log Out" Grid.Column="2" HorizontalAlignment="Center" Height="52" VerticalAlignment="Center" Width="125" Click="btnLogOut_Click"/>
+        <ListBox x:Name="lstParcelListReceived" Grid.Column="3" Grid.Row="4" Grid.RowSpan="2" HorizontalAlignment="Stretch" Height="Auto" Margin="5,0,5,0" VerticalAlignment="Stretch" Width="Auto" MouseDoubleClick="lstParcelListReceiving_MouseDoubleClick">
+            <ListBox.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform AngleX="0"/>
+                    <RotateTransform Angle="0"/>
+                    <TranslateTransform X="0"/>
+                </TransformGroup>
+            </ListBox.RenderTransform>
+        </ListBox>
+        <TextBlock x:Name="tBlock_sending" Grid.Column="3" Text="sending" Margin="5,5,5,5" FontSize="20" TextWrapping="Wrap"  Height="Auto" Width="Auto" Padding="85,25"/>
+        <TextBlock x:Name="tBlock_receiving" Grid.Column="3" Grid.Row="3" Text="receiving" Margin="5,5,5,5" FontSize="20" TextWrapping="Wrap"  Height="Auto" Width="Auto" Padding="85,25"/>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="45*"/>
+            <ColumnDefinition Width="61*"/>
+            <ColumnDefinition Width="40*"/>
+            <ColumnDefinition Width="75*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height ="*"/>
+            <RowDefinition Height ="*"/>
+            <RowDefinition Height ="*"/>
+            <RowDefinition Height ="*"/>
+            <RowDefinition Height ="*"/>
+            <RowDefinition Height ="*"/>
+
+        </Grid.RowDefinitions>
+
+    </Grid>
+</Window>

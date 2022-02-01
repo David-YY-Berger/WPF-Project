@@ -7,7 +7,7 @@ using System.ComponentModel;
 
 namespace DalXml
 {
-    namespace DO
+    namespace DataObject
     {
 
         public struct Station : INotifyPropertyChanged
@@ -53,17 +53,6 @@ namespace DalXml
 
                 }
             }
-
-            //public void print()
-            //{
-            //    Console.WriteLine("Station " + Name + " id: " + Id + "\n" +
-            //        "(" + Longitude + "," + Latitude + ")" + "\n" +
-            //        "ChargeSlots: " + ChargeSlots + "\n");
-            //}
-
-
-
-
 
         }
 

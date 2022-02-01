@@ -2,13 +2,13 @@
 
 namespace DalXml
 {
-    namespace DO
+    namespace DataObject
     {
 
         public struct Parcel
         {
-            public Parcel(int _senderId,int _targetId,DalXml.DO.WeightCategories? _weight,
-                          DalXml.DO.Priorities? _priority) 
+            public Parcel(int _senderId,int _targetId,DalXml.DataObject.WeightCategories? _weight,
+                          DalXml.DataObject.Priorities? _priority) 
             {
                 Id = DalXml.DataSource.thisConfig.parcelSerialNumber++; 
                 SenderId = _senderId;
@@ -26,8 +26,8 @@ namespace DalXml
             public int Id { get; set; }
             public int SenderId { get; set; }
             public int ReceiverId { get; set; }
-            public DalXml.DO.WeightCategories? Weight { get; set; }
-            public DalXml.DO.Priorities? Priority { get; set; }
+            public DalXml.DataObject.WeightCategories? Weight { get; set; }
+            public DalXml.DataObject.Priorities? Priority { get; set; }
             public int? DroneId { get; set; }
             
             public DateTime? TimeCreated { get; set; } //when we receive request for the parcel

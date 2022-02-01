@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace DalXml
 {
-    namespace DO
+    namespace DataObject
     {
          public class EXItemNotFoundException:Exception 
         {

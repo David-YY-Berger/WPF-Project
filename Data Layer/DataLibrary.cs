@@ -3,6 +3,9 @@
 //using System.Collections.ObjectModel;
 
 
+//THIS FILE IS A C# VERSION OF OUR xml FILES... NO LONGER IN USE
+
+
 //namespace DalXml
 //{
 
