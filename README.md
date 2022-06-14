@@ -23,28 +23,25 @@ There are four main objects held in The Data Library:
 
 ### Directions to view the project easily:
 
-- [ ] Click on “Default Login”
+- [ ] Click on “Default Login”  
+  
+![image](https://user-images.githubusercontent.com/91850832/173566369-d929f788-b5e6-4c41-bef1-155e84e6c5c9.png)
+
 - [ ] Open the **Map Window**, and click “Start Simulator”. Watch the drones deliver the parcels. 
-
+  
 ![image](https://user-images.githubusercontent.com/91850832/151113568-cfdd7a80-e7e7-478e-9602-8b1a66fa6a8d.png)
-
-
+  
 - [ ] Click "**Show TextBlock View**" \
 _Blue boxes_ are customers - with the number of parcels waiting to be delivered \
 _Green boxes_ are stations - with the number of drones charging there \
 _Red boxes_ are drones - a 1 if they're carrying a parcel, and 0 if they're not carrying a parcel
-
+  
 ![image](https://user-images.githubusercontent.com/91850832/151113656-d721aa1e-05b6-4902-bcab-2da433aca861.png)
-
-
-
-- [ ] You can **view each object** in their window -> Open their list from the MainWindow and double click on an item. 
-
+  
+- [ ] You can **view each object** in their window -> Open their list from the MainWindow and double click on an item.   
+  
 ![image](https://user-images.githubusercontent.com/91850832/151113962-6608fe12-070f-496e-a9a3-312adaeace10.png)
-
-
-
-
+  
 - [ ]  To **manually deliver parcels** (instead of the Simulator), open an individual drone window. 
 ![image](https://user-images.githubusercontent.com/91850832/151115429-3ec90b42-6c59-4bdf-ba48-750a9b34c5db.png)
 
