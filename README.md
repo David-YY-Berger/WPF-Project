@@ -26,7 +26,7 @@ There are four main objects held in The Data Library:
 - Parcels. 
 
 ### Directions to view the project easily:
-
+- [ ] simply download the source code and run with any C# IDE (no special technology or dependency required). We use Visual Studio
 - [ ] Click on “Default Login”  
   
 ![image](https://user-images.githubusercontent.com/91850832/173566369-d929f788-b5e6-4c41-bef1-155e84e6c5c9.png)
