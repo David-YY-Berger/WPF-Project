@@ -1,6 +1,10 @@
 # Imagine a World - Run by Drone Deliveries
 >created by David Berger & Alexandr Sychev, at the Lev Academic Institute (Jerusalem College of Technology)
 
+![image](https://user-images.githubusercontent.com/91850832/194753179-dc835e5d-464b-4a48-86a4-9cd7e88aba76.png)
+
+  
+    
 This Program allows customers and employees to send parcels to different locations (with Drones). Users can track the Drone's locations, battery life (which decreases with distance traveled and weight of the parcel), send Drones to charge at stations. Employee can view a customer and see which of his parcels were delivered/received, and add or delete Parcels, Stations, Drones, and Customers. Program supports the User viewed previously deleted objects in lists. There is a login window, which opens different parts of the program whether the user is an employee or customer. 
 The Program has a **Simulator** which runs the drones to pick up parcels, based on a few different algorithms (which make sure that no drone runs out of battery on the way).
 We developed our Program with very clear and understandable architecture, and a Programmer can easily add many features.
